@@ -9,14 +9,23 @@
         <title>Acme Outdoors</title>
         <style>
             * {
-                font-family: Sen, sans-serif;
+                font-family: Arial, sans-serif;
                 font-size: 16px;
-                color: white
+                color: white;
+                text-decoration: none;
                 
             }
 
             h1 {
+                font-size: 45px;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 10px;
                 font-size: 40px;
+                line-height: 36px;
+                font-weight: bold;
             }
 
             p {
@@ -37,6 +46,7 @@
                 padding: 8px 20px;
                 background-color: transparent; 
                 border: solid white 1px;
+                cursor: pointer;
             }
             
             .grid-container {
@@ -69,7 +79,7 @@
                 padding: 10px;
                 margin: -10px;
             }
-            
+
             .presentation {
                 height: 550px;
                 max-width: 100%;
@@ -85,6 +95,10 @@
                 background-color: white;
                 margin: -10px;
                 padding: 150px;
+            }
+
+            .geofig {
+                
             }
 
             .covid_announcement2 {
@@ -106,9 +120,22 @@
             }
 
             .shop-image > img {
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 380px;
+                height: 500px;
+                border: 1px solid #ddd;
+                border-radius: 1px;
                 object-fit: cover;
-                width: 100%;
-                max-height: 100%;
+                object-position: 50% 50%;
+                border-radius: 8px;
+                
+            }
+
+            .shop-image > text {
+                font-size: 14px;
+                text-align: center;
             }
 
             .center-button {
@@ -144,24 +171,24 @@
                     <img src="images/logo.svg" alt="Acme Outdoors logo"/>
                 </div>
                 <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Shop</li>
-                        <li>Donate</li>
-                        <li>Contact</li>
-                    </ul>
+                        <ul>
+                            <li><a href='#'>Home</a></li>
+                            <li><a href='#'>About</a></li>
+                            <li><a href='#'>Shop</a></li>
+                            <li><a href='#'>Donate</a></li>
+                            <li><a href='#'>Contact</a></li>
+                        </ul>
                 </div>
-                <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">    
-                    <img src="images/carrinho.svg">
+                <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">
+                    <a href="#"><img src="images/carrinho.svg" style="text-align: right;"></a>
                 </div>
             </div>
         </div>
         
         <div class="presentation">
-            <h1> Serving you since 1989.</h1>
-            <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse district in Oklahoma City.</p>
-            <a href='#'><button>Shop Merch</button></a>
+                <h1> Serving you since 1989</h1>
+                <p>Acme Outdoors is an outdoor and adventure shop located in the Boathouse district in Oklahoma City.</p>
+                <a href='#'><button>Shop Merch</button></a>
         </div>
         
         <div class="ways_to_support">
@@ -175,15 +202,40 @@
                     <p style="color: black;">COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we've listed the best ways to help us
                 </div>
             </div>
-            <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
+            
+            <div class="grid-container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: [title] auto [geofigs] 50px [text] auto; column-gap: 20px;">
+                
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                    <p>01</p>
+                    <p>SHOP <br>PRODUCTS</p>
+                </div>
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                    <p>02</p>
+                    <p>DONATE</p>
+                </div>
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                    <p>03</p>
+                    <p>BUY <br>GIFT CARDS</p>
+                </div>
+
+                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
+                    <img src="images/circle.svg">
+                </div>
+                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
+                    <img src="images/triangle.svg">
+                </div>
+                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
+                    <img src="images/rectangle.svg">
+                </div>
+
                 <div class="grid-item">
-                    <p  style="color: black">Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>
+                    <p style="color: black;">Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!</p>
                 </div>
                 <div class="grid-item">
-                    <p style="color: black">Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>
+                    <p style="color: black;">Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.</p>
                 </div>
                 <div class="grid-item">
-                    <p style="color: black">Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.</p>
+                    <p style="color: black;">Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.</p>
                 </div>
             </div>
         </div>
@@ -196,22 +248,24 @@
         </div>
         
         <div class="shop_products">
-            <p style="color: black;">Shop products</p>
+            <p style="color: black;">SHOP PRODUCTS</p>
             <h2 style="color: black;">Open 24/7/365</h2>
-            <div class="grid-container">
+            <div class="grid-container" style="text-align: center;">
                 <div class="grid-item" style="object-fit: none;">
                     <div class="shop-image">
                         <img src="images/barraca.jpg" alt="Woman with dog inside white tent">
                     </div>
                     <p style="color: black;">White tent</p>
                     <p style="color: black;">$ 200.00 USD</p>
+                    <a href="#"><button style="background-color: #eb5757;">Details</button></a>
                 </div>
                 <div class="grid-item" style="object-fit: none;">
                     <div class="shop-image">
-                        <img src="images/caneca.jpg" alt="White tin cup with black skull drawing">
+                       <img src="images/caneca.jpg" alt="White tin cup with black skull drawing">
                     </div>
                     <p style="color: black;">Tin Coffee Tumbler</p>
                     <p style="color: black;">$ 35.00 USD</p>
+                    <a href="#"><button style="background-color: #eb5757;">Details</button></a>
                 </div>
                 <div class="grid-item" style="object-fit: none;">
                     <div class="shop-image">
@@ -220,6 +274,7 @@
                     <div class="black-font">
                         <p style="color: black;">Blue Canvas Pack</p>
                         <p style="color: black;">$ 95.00 USD <span style="color:#eb5757"><s>$ 145 USD</s></span></p>
+                        <a href="#"><button style="background-color: #eb5757;">Details</button></a>
                     </div>
                 </div>
             </div>
