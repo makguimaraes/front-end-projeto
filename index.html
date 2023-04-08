@@ -7,170 +7,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Acme Outdoors</title>
-        <style>
-            * {
-                font-family: Arial, sans-serif;
-                font-size: 16px;
-                color: white;
-                text-decoration: none;
-                
-            }
-
-            h1 {
-                font-size: 45px;
-            }
-
-            h2 {
-                margin-top: 20px;
-                margin-bottom: 10px;
-                font-size: 40px;
-                line-height: 36px;
-                font-weight: bold;
-            }
-
-            p {
-                line-height: 1.5;
-            }
-
-            ul {
-                list-style-type: none;
-                float: left;
-            }
-
-            li {
-                display: inline;
-                padding: 20px;
-            }
-            button {
-                border-radius: 10px;
-                padding: 8px 20px;
-                background-color: transparent; 
-                border: solid white 1px;
-                cursor: pointer;
-            }
+        <link rel='stylesheet' type='text/css' href='css_index.css'>
             
-            .grid-container {
-                display: grid;
-                grid-template-columns: auto auto auto auto auto;
-                background-color: white;
-                padding: 0px;
-                }
-
-            .grid-item {
-                background-color: white;
-                border: 1px solid white;
-                padding: 20px;
-                font-size: 30px;
-                }
-
-            .body {
-                padding: 0px;
-                margin: -10px;
-            }
-
-            .covid_announcement {
-                padding: 10px;
-                margin: -10px;
-                background-color: black;
-            }
-
-            .menu {
-                background-color: #eb5757;
-                padding: 10px;
-                margin: -10px;
-            }
-
-            .presentation {
-                height: 550px;
-                max-width: 100%;
-                background-image: url(images/imagem01.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                padding: 10px;
-                margin: -10px;
-            }
-
-            .ways_to_support {
-                background-color: white;
-                margin: -10px;
-                padding: 150px;
-            }
-
-            .geofig {
-                
-            }
-
-            .covid_announcement2 {
-                height: 550px;
-                max-width: 100%;
-                background-image: url(images/imagem02.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                padding: 10px;
-                margin: -10px;
-                text-align: right;
-            }
-
-            .shop_local {
-                background-color: black;
-                padding: 10px;
-                margin: -10px;
-            }
-
-            .shop-image > img {
-                display: inline-block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 380px;
-                height: 500px;
-                border: 1px solid #ddd;
-                border-radius: 1px;
-                object-fit: cover;
-                object-position: 50% 50%;
-                border-radius: 8px;
-                
-            }
-
-            .shop-image > text {
-                font-size: 14px;
-                text-align: center;
-            }
-
-            .center-button {
-                text-align: center;
-                padding-bottom: 20px;
-            }
-
-            .shop-local-image > img{
-                object-fit: cover;
-                width: 100%;
-                max-height: 100%;
-            }
-
-        </style>
     </head>
 
     <body>
         
         <div class="covid_announcement">
-            <div class="grid-container" style="background-color: black; text-align: right;">
-                <div class="grid-item" style="border: black; background-color: black; ">
+            <div class="grid-container" style="background-color: black; grid-template-columns: 200px fit-content() fit-content() 200px; grid-template-rows: 70px; margin-top: -20px;">
+                <div class="grid-item" style="background-color: black; border: black;">
+
+                </div>
+                <div class="grid-item" style="border: black; background-color: black; text-align: right;">
                     <a href='#'><button type: button style="background-color: #eb5757; border: solid #eb5757; border-radius: 20px">Announcement</button></a>
                 </div>
                 <div class="grid-item" style="border:black; background-color: black; text-align: left;">
                     <p>How we're responding to COVID-19</p>
                 </div>
+                <div class="grid-item" style="background-color: black; border: black;">
+
+                </div>
             </div>
         </div>
         
         <div class="menu">
-            <div class="grid-container" style="background-color: #eb5757;">
+            <div class="grid-container" style="background-color: #eb5757; grid-template-rows: 70px; margin-top: -10px; overflow: hidden;">
                 <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">
                     <img src="images/logo.svg" alt="Acme Outdoors logo"/>
                 </div>
-                <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">
+                <div class="grid-item" style="background-color: #eb5757; border: #eb5757; margin-top: -10px; height: 20px; padding: -10px;">
                         <ul>
                             <li><a href='#'>Home</a></li>
                             <li><a href='#'>About</a></li>
@@ -179,7 +44,7 @@
                             <li><a href='#'>Contact</a></li>
                         </ul>
                 </div>
-                <div class="grid-item" style="background-color: #eb5757; border: #eb5757;">
+                <div class="grid-item" style="background-color: #eb5757; border: #eb5757; margin-top: -10px; margin-right: -20px">
                     <a href="#"><img src="images/carrinho.svg" style="text-align: right;"></a>
                 </div>
             </div>
@@ -192,40 +57,33 @@
         </div>
         
         <div class="ways_to_support">
-            <div class="grid-container">
+            <div class="grid-container" style="margin-top: -150px">
                 <div class="grid-item">
                     <p style="color: black; line-height: 1.0;">Ways to Support</p>
                     <p style="color: black; font-size: 30px; font-weight: bold; line-height: 1.0;">Support Acme Outdoors</p>
                     
                 </div>
                 <div class="grid-item">
-                    <p style="color: black;">COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we've listed the best ways to help us
+                    <p style="color: black;">COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we've listed the best ways to help us through this season.</p>
                 </div>
             </div>
             
-            <div class="grid-container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: [title] auto [geofigs] 50px [text] auto; column-gap: 20px;">
+            <div class="grid-container" style="grid-template-columns: repeat(3, 1fr); grid-template-rows: auto 50px fit-content(); column-gap: 20px;">
                 
-                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black; border: 0px; height: 150px; overflow: hidden;">
                     <p>01</p>
                     <p>SHOP <br>PRODUCTS</p>
+                    <img src="images/circle.svg" style="float: right; margin-right: -65px;">
                 </div>
-                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black; border: 0px; height: 150px; overflow: hidden;">
                     <p>02</p>
                     <p>DONATE</p>
+                    <img src="images/triangle.svg" style="float: right; margin-right: -65px;">
                 </div>
-                <div class="grid-item" style="background-color: black; position: relative; border-color: black;">
+                <div class="grid-item" style="background-color: black; position: relative; border-color: black; border: 0px; height: 150px; overflow: hidden;">
                     <p>03</p>
                     <p>BUY <br>GIFT CARDS</p>
-                </div>
-
-                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
-                    <img src="images/circle.svg">
-                </div>
-                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
-                    <img src="images/triangle.svg">
-                </div>
-                <div class="grid-item" class="geofig" style="background-color: black; border-color: black;">
-                    <img src="images/rectangle.svg">
+                    <img src="images/rectangle.svg" style="float: right; margin-right: -65px;">
                 </div>
 
                 <div class="grid-item">
@@ -240,11 +98,10 @@
             </div>
         </div>
 
-        <div class="covid_announcement2">
+        <div class="covid_announcement2" style="margin-bottom: 50px; margin-top: -150px;">
             <h1>How we're keeping you <br>safe during COVID-19</h1>
             <p>As an outdoor shop, we've taken precautionary <br>measures to ensure the safety of all our <br>customers and team members.</p>
             <a href='#'><button>Read Our Statement</button></a>
-
         </div>
         
         <div class="shop_products">
@@ -273,7 +130,7 @@
                     </div>
                     <div class="black-font">
                         <p style="color: black;">Blue Canvas Pack</p>
-                        <p style="color: black;">$ 95.00 USD <span style="color:#eb5757"><s>$ 145 USD</s></span></p>
+                        <p style="color: black;">$ 95.00 USD <span style="color:#eb5757; text-decoration: line-through;">$ 145 USD</span></p>
                         <a href="#"><button style="background-color: #eb5757;">Details</button></a>
                     </div>
                 </div>
@@ -284,49 +141,41 @@
             
         </div>
 
-        <div class="shop_local" style="padding-bottom: 30px;">
-
-            <div class="grid-container">
-                <div class="grid-item" style="background-color: black; border: black;">
-                    <div class="shop-local-image">
-                        <img src="images/mulher.jpg" alt="Woman at the register">
-                    </div>
+        <div class="shop_local">
+            <div class="grid-container" style="grid-template-columns: repeat(4, 1fr); grid-template-columns: 350px auto 700px 120px; grid-template-rows: 430px auto fit-content() 1fr;">
+                <div class="grid-item" style="padding-top: 30px;">
+                    <img src="images/mulher.jpg" alt="Female cashier at work" style="position: relative; width: 350px; height: 430px; object-fit: cover; object-position: 80% 0%;">
                 </div>
-                <div class="grid-item" style="background-color: black; border: black;">
-                    <h2>Shop Local</h2>
+                <div class="grid-item" style="background-color: black; width: 230px; margin-left: -100px; border: black;">
+                </div>
+                <div class="grid-item" style="background-color: black; border: black">
+                    <h1>Shop Local</h1>
+                    <p>We know that during COVID-19, a lot of folks<br>around the city and state are feeling uneasy about<br>the future - we're not sure what the future holds<br>either.</p>
+                    <p>That said: we know that we love making sure you<br>have the gear you need for your adventures, and<br>we're going to keep doing that - with our team - <br>until the city tells us we can't.</p>
+                    <p>But as long as folks like yourself support small<br>businesses around the city, then we'll be here — <br>every day, making sure your orders arrive on time.</p>
+                    <p>-------</p>
+                    <p>Jane & John Acme<br>Acme Outdoors</p>
+                </div>
+                <div class="grid-item" style="background-color: white;">
 
-                    <p>We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the future - we're not sure what the future holds either.</p>
-                            
-                    <p>That said: we know that we love making sure you have the gear you need for your adventures, and we're going to keep doing that - with our team - until the city tells us we can't.</p>
-                            
-                    <p>But as long as folks like yourself support small businesses around the city, then we'll be here — every day, making sure your orders arrive on time.</p>
-                            
-                    <p>Jane & John Acme</p>
-                    <p>Acme Outdoors</p>
                 </div>
             </div>
         </div>
         
-        <div id="footer" style="padding-top: 20px;">
-
-        </div>
-            <div class="grid-container" style="margin-right: -10px; margin-left: -10px;">
+        <div id="footer" style="margin-bottom: -100px; margin-left: -10px; padding-top: 50px;">
+            <div class="grid-container" style="grid-template-rows: fit-content(); grid-template-columns: 5vw 82vw 12vw">
                 <div class="grid-item" style="background-color: black; border: black;">
                     <img src="images/logo.svg" alt="Acme Outdoors logo">
                 </div>
-                <div class="grid-item" style="background-color: black; border: black;">
-
-                </div>
+                <div class="grid-item" style="background-color: black; border: black;"></div>
                 <div class="grid-item" style="background-color: black; border: black; text-align: right;">
-                    <a href="#"><img src="images/twitter.svg" alt="Twitter" width="30%" height="30%" object-fill="none"></a>
-                </div>
-                <div class="grid-item" style="background-color: black; border: black; text-align: right;">
-                    <a href="#"><img src="images/facebook.svg" alt="Facebook" width="30%" height="30%" object-fill="none"></a>
-                </div>
-                <div class="grid-item" style="background-color: black; border: black; text-align: right;">
-                    <a href="#"><img src="images/instagram.svg" alt="Instagram" width="30%" height="30%" object-fill="none"></a>
+                    <a href="#"><img src="images/twitter.svg" alt="Twitter" width="30px" height="30px" object-fill="none"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="Facebook" width="30px" height="30px" object-fill="none"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="Instagram" width="30px" height="30px" object-fill="none"></a>
                 </div>
             </div>
-        </body>
+        </div>
 
-    </html>
+    </body>
+
+</html>
